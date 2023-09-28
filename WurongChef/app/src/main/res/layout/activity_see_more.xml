@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeeMore">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/seeMoreRow1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMoreBetween1and2"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore1"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toStartOf="@+id/seeMoreBetween1and2"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/seeMore1Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore1FoddName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore1Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/seeMore1FoddName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore1FoddName1"
+                        android:text="계란 새우볶음밥"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore1IngredientBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--갈림-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore2"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toEndOf="@+id/seeMoreBetween1and2"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/seeMore2Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore2FoodName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore2Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/seeMore2FoodName2"
+                        android:layout_width="196dp"
+                        android:layout_height="21dp"
+                        android:text="계란 새우볶음밥"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore2FoodName1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore2IngredientBae"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/seeMoreRow2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seeMoreRow1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMoreBetween3and4"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore3"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toStartOf="@+id/seeMoreBetween3and4"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/seeMore3Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore3FoddName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore3Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/seeMore3FoddName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore3FoddName1"
+                        android:text="계란 새우볶음밥"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore3IngredientBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--갈림-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore4"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toEndOf="@+id/seeMoreBetween3and4"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/seeMore4Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore4FoodName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore4Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/seeMore4FoodName2"
+                        android:layout_width="196dp"
+                        android:layout_height="21dp"
+                        android:text="계란 새우볶음밥"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore4FoodName1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore4IngredientBae"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/seeMoreRow3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seeMoreRow2">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMoreBetween5and6"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore5"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toStartOf="@+id/seeMoreBetween5and6"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/seeMore5Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore5FoddName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore5Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/seeMore5FoddName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore5FoddName1"
+                        android:text="계란 새우볶음밥"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore5IngredientBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--갈림-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore6"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toEndOf="@+id/seeMoreBetween5and6"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/seeMore6Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore6FoodName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore6Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/seeMore6FoodName2"
+                        android:layout_width="196dp"
+                        android:layout_height="21dp"
+                        android:text="계란 새우볶음밥"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore6FoodName1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore6IngredientBae"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/seeMoreRow4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seeMoreRow3">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMoreBetween7and8"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore7"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toStartOf="@+id/seeMoreBetween7and8"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/seeMore7Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore7FoddName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore7Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/seeMore7FoddName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore7FoddName1"
+                        android:text="계란 새우볶음밥"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore7IngredientBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--갈림-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/seeMore8"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toEndOf="@+id/seeMoreBetween7and8"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/seeMore8Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mainfood"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/seeMore8FoodName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="21dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore8Img"
+                        android:text="10분만에 뚝딱 완성! 궁극의"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/seeMore8FoodName2"
+                        android:layout_width="196dp"
+                        android:layout_height="21dp"
+                        android:text="계란 새우볶음밥"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seeMore8FoodName1" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/seeMore8IngredientBae"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="재료관련 넣는곳(임시)"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_icon1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="내가 가진 재료로 할 수 있는 요리!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
